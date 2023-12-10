@@ -104,3 +104,54 @@
 .btnrgb:where(:hover, :focus) {
     color: #fff;
 }
+
+
+/* navlinks */
+.btnroutes {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    padding: 0.5em 0.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .btnroutes::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #3bde00;
+    transition: .5s ease;
+  }
+  
+  .btnroutes:hover {
+    color: white;
+    transition-delay: .5s;
+  }
+  
+  .btnroutes:hover::before {
+    width: 100%;
+  }
+  
+  .btnroutes::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .btnroutes:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }

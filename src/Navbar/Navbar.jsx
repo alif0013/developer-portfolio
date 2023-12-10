@@ -7,25 +7,33 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        } >Home</NavLink></li>
+            isPending ? "pending" : isActive ? "" : ""
+        } ><button class="btnroutes">
+                Home
+            </button></NavLink></li>
 
         <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        } >Services</NavLink></li>
-
+            isPending ? "pending" : isActive ? "" : ""
+        } ><button class="btnroutes">
+                Services
+            </button></NavLink></li>
+        <li><NavLink to='/' className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "" : ""
+        } ><button class="btnroutes">
+                Experience
+            </button></NavLink></li>
 
         <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        }>Experience</NavLink></li>
-
+            isPending ? "pending" : isActive ? "" : ""
+        } ><button class="btnroutes">
+                About
+            </button></NavLink></li>
+            
         <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        }>About</NavLink></li>
-
-        <li><NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        }>Projects</NavLink></li>
+            isPending ? "pending" : isActive ? "" : ""
+        } ><button class="btnroutes">
+                Projects
+            </button></NavLink></li>
 
 
 
