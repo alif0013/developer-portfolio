@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './services.css'
 
 const Service = () => {
     useEffect(() => {
@@ -17,6 +18,12 @@ const Service = () => {
 
             <div data-aos="fade-up" className='mt-10 mb-10 md:mb-20 '>
                 <h1 className='text-center text-2xl md:text-5xl'>My Services</h1>
+            <hr className="hidden md:block w-[300px] mx-auto mt-5 border-2 border-purple-600" />
+            </div>
+
+            
+            <div>
+                <img className="animate-pulse w-8" src="https://i.ibb.co/gPvNJh3/violet-ball.png" alt="" />
             </div>
 
             <div className="hero min-h-screen">
