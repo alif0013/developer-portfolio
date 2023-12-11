@@ -103,7 +103,7 @@ const Technology = () => {
                         <figure className="px-10 pt-10">
                             <div className="avatar">
                                 <div className="w-16 rounded-full">
-                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/main/src/assets/ex.webp" />
+                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/main/src/assets/express.jpg" />
                                 </div>
                             </div>
                         </figure>
@@ -153,7 +153,7 @@ const Technology = () => {
                             </div>
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">Material Ui</h2>
+                            <h2 className="card-title">MUI</h2>
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@ const Technology = () => {
                             </div>
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">Git & Github</h2>
+                            <h2 className="card-title">Git</h2>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,22 @@ const Technology = () => {
                             </div>
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">Scoket io</h2>
+                            <h2 className="card-title">Scoket</h2>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div data-aos="zoom-in" className="card">
+                        <figure className="px-10 pt-10">
+                            <div className="avatar">
+                                <div className="w-16 rounded-full">
+                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/main/src/assets/nextjs.webp" />
+                                </div>
+                            </div>
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title">Next js</h2>
                         </div>
                     </div>
                 </div>
