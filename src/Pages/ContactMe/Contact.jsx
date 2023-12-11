@@ -4,14 +4,7 @@ const Contact = () => {
     return (
         <div>
 
-            {/* <div className="hero md:min-h-[400px]">
-                <div className="hero-content flex-col lg:flex-row-reverse gap-10">
-                    <img data-aos="zoom-in" src="https://raw.githubusercontent.com/alif0013/developer-portfolio/ed6c3fe2aed0d7b147dd4bfe459357c3c1cfebdc/src/assets/spaceship.svg" className="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                       
-                    </div>
-                </div>
-            </div> */}
+           
             <div className="hero md:min-h-[400px]">
                 <div className="hero-content flex-col lg:flex-row gap-40">
                     <img data-aos="zoom-in" src="https://raw.githubusercontent.com/alif0013/developer-portfolio/ed6c3fe2aed0d7b147dd4bfe459357c3c1cfebdc/src/assets/spaceship.svg" className="max-w-sm md:max-w-lg" />
