@@ -1,13 +1,21 @@
-import img1 from '../../../assets/font-end.svg'
-import img2 from '../../../assets/backend.svg'
-import img3 from '../../../assets/developer.svg'
-import img4 from '../../../assets/design.svg'
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Service = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            once: true,    // Whether the animation should only happen once
+        });
+
+        AOS.refresh();
+    }, [])
+
     return (
         <div>
 
-            <div className='mb-20'>
+            <div data-aos="fade-up" className='mt-10 mb-10 md:mb-20 '>
                 <h1 className='text-center text-2xl md:text-5xl'>My Services</h1>
             </div>
 
@@ -15,10 +23,10 @@ const Service = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse gap-10">
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div>
-                            {/* <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-lg rounded-lg" /> */}
-                            <div className="card md:w-60 border-2 border-purple-600 rounded-xl shadow-xl">
+                            
+                            <div data-aos="zoom-in" className="card md:w-60  border-2 border-purple-600 rounded-xl shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={img1} alt="img" className="rounded-xl w-[200px]" />
+                                    <img  src="https://raw.githubusercontent.com/alif0013/developer-portfolio/e9eb3c43cd153e30cfcd4aa72157c1a49306a46d/src/assets/font-end.svg" alt="img" className="rounded-xl w-[200px] md:h-[100px]" />
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <h2 className="card-title">FrontEnd</h2>
@@ -28,37 +36,37 @@ const Service = () => {
                             </div>
                         </div>
                         <div>
-                        <div className="card md:w-60 border-2 border-purple-600 rounded-xl  shadow-xl">
+                        <div data-aos="zoom-in" className="card md:w-60  border-2 border-purple-600 rounded-xl  shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={img1} alt="img" className="rounded-xl w-[220px]" />
+                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/e9eb3c43cd153e30cfcd4aa72157c1a49306a46d/src/assets/backend.svg" alt="img" className="rounded-xl w-[220px] md:h-[100px]" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="card-title">FrontEnd</h2>
-                                    <p>Html, Css, JavaScript, React, Next js</p>
+                                    <h2 className="card-title">BackEnd</h2>
+                                    <p>Node, Express, MongoDB, Mongoos</p>
                                   
                                 </div>
                             </div>
                         </div>
                         <div>
-                        <div className="card md:w-60 border-2 border-purple-600 rounded-xl shadow-xl">
+                        <div data-aos="zoom-in" className="card md:w-60 border-2 border-purple-600 rounded-xl shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={img1} alt="img" className="rounded-xl w-[220px]" />
+                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/e9eb3c43cd153e30cfcd4aa72157c1a49306a46d/src/assets/developer.svg" alt="img" className="rounded-xl w-[220px] md:h-[100px]" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="card-title">FrontEnd</h2>
-                                    <p>Html, Css, JavaScript, React, Next js</p>
+                                    <h2 className="card-title">Development</h2>
+                                    <p>Html, Css, JavaScript, React, Mui, Tailwind</p>
                                   
                                 </div>
                             </div>
                         </div>
                         <div>
-                        <div className="card md:w-60 border-2 border-purple-600 rounded-xl shadow-xl">
+                        <div data-aos="zoom-in" className="card md:w-60 border-2 border-purple-600 rounded-xl shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={img1} alt="img" className="rounded-xl w-[220px]" />
+                                    <img src="https://raw.githubusercontent.com/alif0013/developer-portfolio/e9eb3c43cd153e30cfcd4aa72157c1a49306a46d/src/assets/desing.svg" alt="img" className="rounded-xl w-[220px] md:h-[100px]" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="card-title">FrontEnd</h2>
-                                    <p>Html, Css, JavaScript, React, Next js</p>
+                                    <h2 className="card-title">Design</h2>
+                                    <p>Figma, Sketch, Photoshop</p>
                                   
                                 </div>
                             </div>

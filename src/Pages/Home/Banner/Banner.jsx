@@ -1,8 +1,19 @@
-
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './custombtn.css';
 
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            once: true,    // Whether the animation should only happen once
+        });
+
+        AOS.refresh();
+    }, [])
 
     return (
         <div>
@@ -12,7 +23,7 @@ const Banner = () => {
                 <div></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hey! <span className='text-[#0077ff]'>Explore</span> Me</h1>
+                        <h1 data-aos="zoom-in" className="mb-5 text-5xl font-bold">Hey! <span className='text-purple-600'>Explore</span> Me</h1>
                         <p className="py-6">I am Alif. Being interested to explore technologies I found web development as my passion. I am aspiring to bring that passion to a full-time role.</p>
 
                         <a href="/images/myw3schoolsimage.jpg" download>
