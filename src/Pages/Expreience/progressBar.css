@@ -1,0 +1,21 @@
+.wrapper {
+    border: 3px solid blue;
+  }
+  
+  .container {
+    background-color: rgb(47, 255, 0);
+  }
+  
+  .barCompleted {
+    background-color: rgb(11, 0, 76);
+    width: 80%;
+  }
+  
+  .label {
+    font-size: 20px;
+    color: green;
+  }
+
+  .barWidth{
+    width: 300px;
+  }
