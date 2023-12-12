@@ -29,10 +29,10 @@ const Navbar = () => {
                 About
             </button></NavLink></li>
             
-        <li><NavLink to='/' className={({ isActive, isPending }) =>
+        <li><NavLink to='' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "" : ""
         } ><button class="btnroutes">
-                Projects
+                projects
             </button></NavLink></li>
 
 
